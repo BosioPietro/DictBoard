@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DictBoard</string>
+    <!-- In the menu of selected text. -->
+    <string name="define">Define</string>
+    <string name="search_hint">Type a word</string>
+    <string name="not_found">No definition for “%1$s”.</string>
+    <string name="did_you_mean">Did you mean “%1$s”?</string>
+    <string name="nothing_to_define">There\'s no word to define in the selection.</string>
+    <string name="too_long">That\'s more than a word or a short phrase.</string>
+    <string name="base_form_of">Base form of “%1$s”</string>
+    <string name="also_form_of">Also a form of “%1$s”</string>
+    <string name="form_of">%1$s → %2$s</string>
+    <string name="synonyms">Synonyms</string>
+    <string name="antonyms">Opposites</string>
+    <string name="source">Source: %1$s</string>
+</resources>
