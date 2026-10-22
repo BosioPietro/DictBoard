@@ -59,7 +59,7 @@ Drawing the card in the keyboard area (like the clipboard drawer) instead of ove
 
 ## Why Kotlin, not WinDict's Rust over JNI
 
-WinDict's lookup core (`src/offline.rs`, `src/dictionary.rs`) is separable from its Win32 code. The only Windows-specific parts are the file mapping, `%LOCALAPPDATA%` and the i18n strings. It could be built with `cargo-ndk`, but the format is simple: a block index and raw-deflate blocks, which `java.util.zip.Inflater(nowrap)` reads directly. A Kotlin port (about 500 lines) avoids the NDK, per-ABI `.so` files and JNI marshalling of `Definition`. It also runs unchanged inside a Gboard extension if option 3 ever needs it. Both implementations are held to the same tests.
+WinDict's lookup core (`src/offline.rs`, `src/dictionary.rs`) is separable from its Win32 code. The only Windows-specific parts are the file mapping, `%LOCALAPPDATA%` and the i18n strings. It could be built with `cargo-ndk`, but the format is simple: a block index and raw-deflate blocks, which `java.util.zip.Inflater(nowrap)` reads directly. A Kotlin port (about 700 lines, comments included) avoids the NDK, per-ABI `.so` files and JNI marshalling of `Definition`. It also runs unchanged inside a Gboard extension if option 3 ever needs it. Both implementations are held to the same tests.
 
 ## Licensing
 
